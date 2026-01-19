@@ -112,7 +112,7 @@ To run this project locally:
 ---
 
 ## 👥 Authors
-* **Anoop Singh Sachdev** (102313048)
-* **Divnoor Singh Sahni** (102303024)
+* **Anoop Singh Sachdev**
+* **Divnoor Singh Sahni** 
 
 *Submitted to: Dr. Mahak Gambhir, Thapar Institute of Engineering & Technology.*
