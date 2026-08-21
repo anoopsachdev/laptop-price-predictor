@@ -1,9 +1,29 @@
 # 💻 Laptop Price Predictor
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
-![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App%20Live-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://laptop-price-predictor-jghbhbuldx2qyrx7a3scfj.streamlit.app)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)]()
+
+<br />
+
+<div align="center">
+  <a href="https://laptop-price-predictor-jghbhbuldx2qyrx7a3scfj.streamlit.app" target="_blank">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+
+| ⚙️ Step 1: Select Hardware Specifications | 💡 Step 2: Instant Valuation Output |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/aa3c13e3-6856-49c1-9428-e401f075d63e" alt="Hardware Configuration Inputs" width="460" /> | <img src="https://github.com/user-attachments/assets/b219cf1b-a78c-48fb-8b85-684a415a6187" alt="Valuation Price Output" width="460" /> |
+
+</div>
+
+<br />
 
 <img width="1440" height="809" alt="Laptop Price Predictor - SS-2" src="https://github.com/user-attachments/assets/aa3c13e3-6856-49c1-9428-e401f075d63e" />
 <img width="1440" height="813" alt="Laptop Price Predictor - SS-1" src="https://github.com/user-attachments/assets/b219cf1b-a78c-48fb-8b85-684a415a6187" />
@@ -15,6 +35,7 @@ A machine learning web application that estimates the market price of a laptop b
 
 ## 📋 Table of Contents
 - [Overview](#-overview)
+- [Live Demo](#-live-demo)
 - [Problem Statement](#-problem-statement)
 - [Dataset & Features](#-dataset--features)
 - [Tech Stack](#-tech-stack)
@@ -30,6 +51,12 @@ A machine learning web application that estimates the market price of a laptop b
 Buying a laptop can be confusing due to the vast number of configurations (RAM, GPU, Storage types) and their complex impact on price. This project translates technical specifications into monetary value using supervised learning. 
 
 The final model is deployed as an interactive web app where users can input specs like **Brand**, **RAM**, **Graphics Card**, and **Screen Resolution** to get an instant price prediction.
+
+---
+
+## 🌐 Live Demo
+You can try out the live web app directly in your browser:
+👉 **[Launch Laptop Price Predictor](https://laptop-price-predictor-jghbhbuldx2qyrx7a3scfj.streamlit.app)**
 
 ---
 
