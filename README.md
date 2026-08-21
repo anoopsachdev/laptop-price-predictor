@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App%20Live-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://laptop-price-predictor-jghbhbuldx2qyrx7a3scfj.streamlit.app)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](https://github.com/anoopsachdev/laptop-price-predictor)
 
 <br />
 
@@ -36,6 +36,7 @@ A machine learning web application that estimates the market price of a laptop b
 ## 📋 Table of Contents
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
+- [System Architecture](#-system-architecture)
 - [Problem Statement](#-problem-statement)
 - [Dataset & Features](#-dataset--features)
 - [Tech Stack](#-tech-stack)
@@ -60,6 +61,19 @@ You can try out the live web app directly in your browser:
 
 ---
 
+## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+    A[User Inputs Specs] --> B[Feature Engineering\n• PPI Calculation\n• Storage Parsing]
+    B --> C[Preprocessing Pipeline\n• ColumnTransformer\n• One-Hot Encoding]
+    C --> D[Random Forest Regressor\nModel]
+    D --> E[Inverse Log Transform\nnp.exp]
+    E --> F[Predicted Price\n₹ INR]
+```
+
+---
+
 ## ❓ Problem Statement
 * **Lack of Transparency:** Buyers struggle to assess if a laptop is priced fairly.
 * **Complex Configurations:** Manual comparison of hybrid storage (SSD+HDD), processor generations, and display panels is difficult.
@@ -72,7 +86,8 @@ You can try out the live web app directly in your browser:
 
 ### Key Feature Engineering
 To improve model accuracy, extensive preprocessing was performed:
-* **PPI (Pixels Per Inch):** Calculated from screen resolution and screen size to quantify display sharpness.
+* **PPI (Pixels Per Inch):** Calculated from screen resolution and screen size to quantify display sharpness:
+  $$\text{PPI} = \frac{\sqrt{X_{\text{res}}^2 + Y_{\text{res}}^2}}{\text{Screen Size (inches)}}$$
 * **CPU Categorization:** Grouped dozens of processor models into 5 key categories (Intel Core i3, i5, i7, Other Intel, AMD).
 * **Storage Parsing:** Extracted and separated complex hybrid storage strings (e.g., "128GB SSD + 1TB HDD") into distinct columns for SSD, HDD, Flash Storage, and Hybrid.
 * **Log Transformation:** Applied to the target variable (`Price`) to normalize the right-skewed distribution.
@@ -80,7 +95,7 @@ To improve model accuracy, extensive preprocessing was performed:
 ---
 
 ## 🛠 Tech Stack
-* **Language:** Python
+* **Language:** Python 3.8+
 * **Frontend:** Streamlit
 * **Machine Learning:** Scikit-Learn
 * **Data Processing:** Pandas, NumPy
@@ -119,7 +134,7 @@ To run this project locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/anoopsachdev/laptop-price-predictor.git](https://github.com/anoopsachdev/laptop-price-predictor.git)
+    git clone https://github.com/anoopsachdev/laptop-price-predictor.git
     cd laptop-price-predictor
     ```
 
@@ -137,13 +152,13 @@ To run this project locally:
 
 ## 🔮 Future Scope
 * **Live Pricing:** Integration with E-commerce APIs for real-time market data.
-* **Multi-Currency:** Support for global currencies beyond INR/USD.
-* **Explainability:** Adding SHAP values to show users *why* a laptop is priced a certain way (e.g., "The OLED screen added $150 to the price").
+* **Multi-Currency Support:** Support for global currencies (USD, EUR, GBP) using real-time forex exchange rates.
+* **Explainability (SHAP):** Adding SHAP values to show users *why* a laptop is priced a certain way (e.g., "The OLED screen added ₹12,000 to the valuation").
 
 ---
 
 ## 👥 Authors
-* **Anoop Singh Sachdev**
+* **Anoop Singh Sachdev** ([@anoopsachdev](https://github.com/anoopsachdev))
 * **Divnoor Singh Sahni** 
 
 *Submitted to: Dr. Mahak Gambhir, Thapar Institute of Engineering & Technology.*
