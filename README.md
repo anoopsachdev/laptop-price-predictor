@@ -19,8 +19,7 @@
 
 | ⚙️ Step 1: Select Hardware Specifications | 💡 Step 2: Instant Valuation Output |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/aa3c13e3-6856-49c1-9428-e401f075d63e" alt="Hardware Configuration Inputs" width="460" /> | <img src="https://github.com/user-attachments/assets/b219cf1b-a78c-48fb-8b85-684a415a6187" alt="Valuation Price Output" width="460" /> |
-
+| <img src="https://github.com/user-attachments/assets/b219cf1b-a78c-48fb-8b85-684a415a6187" alt="Hardware Configuration Inputs" width="460" /> | <img src="https://github.com/user-attachments/assets/aa3c13e3-6856-49c1-9428-e401f075d63e" alt="Valuation Price Output" width="460" /> |
 </div>
 
 <br />
