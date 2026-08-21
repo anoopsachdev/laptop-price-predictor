@@ -5,6 +5,10 @@
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+<img width="1440" height="809" alt="Laptop Price Predictor - SS-2" src="https://github.com/user-attachments/assets/aa3c13e3-6856-49c1-9428-e401f075d63e" />
+<img width="1440" height="813" alt="Laptop Price Predictor - SS-1" src="https://github.com/user-attachments/assets/b219cf1b-a78c-48fb-8b85-684a415a6187" />
+
+
 A machine learning web application that estimates the market price of a laptop based on its hardware specifications. This project addresses the challenge of non-linear pricing in the electronics market by utilizing a **Random Forest Regressor** to provide accurate valuations for consumers and retailers.
 
 ---
